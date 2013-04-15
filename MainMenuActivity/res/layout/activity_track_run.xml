@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackRunActivity" >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/startRunButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="startChronometer"
+        android:text="@string/start_run" />
+
+    <Button
+        android:id="@+id/pauseRunButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopChronometer"
+        android:text="@string/pause_run" />
+
+    <Button
+        android:id="@+id/endRunButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/end_run" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="248dp"
+        android:layout_above="@+id/backButton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/startRunButton"
+        android:layout_weight="1.13"
+        android:apiKey="AIzaSyAhUztomuGNWM718DZNffjjf4Yx0Ffahwc"
+        android:clickable="true" >
+
+    </com.google.android.maps.MapView>
+
+    <Chronometer
+        android:id="@+id/chronometer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startRunButton"
+        android:layout_alignBottom="@+id/startRunButton"
+        android:layout_toRightOf="@+id/pauseRunButton"
+        android:text="@string/time_elapsed" />
+
+</RelativeLayout>
