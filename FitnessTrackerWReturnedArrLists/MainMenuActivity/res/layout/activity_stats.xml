@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsActivity" >
+    
+            <ImageView
+        android:id="@+id/background"
+        android:contentDescription="BG"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/background"
+        />
+
+    <TextView
+        android:id="@+id/runHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Run Statistics"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/timeRan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/runHeader"
+        android:text="@string/time_ran"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/milesRan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timeRan"
+        android:text="@string/miles_ran"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/averageMPH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/milesRan"
+        android:text="Average Mile Time"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/calBurnedRan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/averageMPH"
+        android:text="@string/cal_burned"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeRanEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/milesRan"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/timeRan"
+        android:text="@string/na" />
+
+    <TextView
+        android:id="@+id/avgMPHEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/averageMPH"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/averageMPH"
+        android:text="@string/na" />
+
+    <TextView
+        android:id="@+id/runCalBurnedEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/avgMPHEntry"
+        android:layout_toRightOf="@+id/calBurnedRan"
+        android:text="@string/na" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/back" />
+
+    <TextView
+        android:id="@+id/milesRanEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/averageMPH"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/milesRan"
+        android:text="@string/na" />
+
+    <Button
+        android:id="@+id/addRunButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Add Run" />
+
+</RelativeLayout>
