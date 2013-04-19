@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp" >
+    
+        
+     <LinearLayout
+            android:id="@+id/layout_item"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" >
+            
+        <RadioButton
+            android:id="@+id/rdb_select_item"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginRight="5dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="website" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="date"
+                android:textColor="#33338b" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="username"
+                android:textColor="#33338b" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="password"
+                android:textColor="#33338b" />
+        </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+           
+ <LinearLayout
+    android:id="@+id/layout_add_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp" >
+    
+ 	<LinearLayout
+        android:id="@+id/Layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <LinearLayout
+            android:id="@+id/Layout3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Back"
+                android:onClick="btn_back_click" />
+
+            <TextView
+                android:id="@+id/arrtest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ArrayTest" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Layout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+   			<Button
+                android:id="@+id/btn_add_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add_update"
+                android:onClick="btn_add_update_click" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- <EditText
+        android:id="@+id/edt_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:hint="Sitename"
+        android:text=""
+        android:singleLine="true"/>
+     -->
+    <AutoCompleteTextView
+        android:id="@+id/edt_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Enter workout"
+        android:singleLine="true" >
+    </AutoCompleteTextView>
+    
+    
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duration (min)"
+        android:singleLine="true"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight (lbs)"
+        android:singleLine="true"
+        android:inputType="number" />
+    </LinearLayout>
+ <LinearLayout
+    android:id="@+id/layout_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+     <LinearLayout
+         android:id="@+id/Layout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+         <Button
+             android:id="@+id/btn_addnew"
+             android:layout_marginTop="5dp"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+              android:layout_weight="1"
+             android:onClick="btn_addnew_click"
+             android:text="Add new" />
+
+         <Button
+             android:id="@+id/graph"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="Graph" />
+         
+         <Button
+             android:id="@+id/btn_edit"
+             android:layout_marginTop="5dp"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:onClick="btn_edit_click"
+             android:text="Edit" />
+         <Button
+             android:id="@+id/btn_delete"
+             android:layout_marginTop="5dp"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:onClick="btn_del_click"
+             android:text="Delete" />
+     </LinearLayout>
+
+	</LinearLayout>
+
+ <ListView
+     android:id="@+id/ListWebsite"
+     android:layout_width="fill_parent"
+     android:layout_height="750dp" >
+ </ListView>
+
+ <Button
+     android:id="@+id/mainmenu"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Main Menu" />
+
+</LinearLayout>
